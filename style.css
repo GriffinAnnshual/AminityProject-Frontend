@@ -341,6 +341,37 @@ section {
     text-align: center;
 }
 
+.review-info button{
+    padding: 4px;
+    outline:0 ;
+    transition: 5s ease-in-out;
+   /* box-shadow: -5px -5px 10px #0F9C57 inset,
+                5px 5px 10px #0F9C57 inset;*/
+    border-radius: 5px;
+    border: 0;
+    /*background:#72b41a;*/
+    background: #fff;
+    color: #0F9D58;
+    cursor:pointer;
+    padding: 5px;
+    transition: transform .2s;
+    border: 1px solid #0F9D58;
+    
+}
+
+.review-info button:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+  background: #0F9D58;
+  border: none;
+  color: #fff; 
+}
+
+.review-info h3{
+    margin: 15px;
+}
+
 .rating {
     margin-top: 2rem;
 }
@@ -424,6 +455,10 @@ section {
 .food-item-wrap.dolor>div.dolor-type {
     display: block;
 }
+.food-item-wrap.dessert>div.dessert-type {
+    display: block;
+}
+
 
 /* ANIMATION */
 
@@ -477,6 +512,10 @@ section {
 
 .delay-8 {
     transition-delay: .8s;
+}
+
+.delay-9 {
+    transition-delay: .9s;
 }
 
 .delay-10 {
@@ -725,4 +764,16 @@ section {
         background-color: #a88722;
       }
       
-      
+      @media  screen and (max-width:600px) {
+        .food-category{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            margin-left: 10px;
+            
+            
+        }
+        .food-category div > button{
+            margin: 10px;
+            font-size: em;
+        }
+      }
