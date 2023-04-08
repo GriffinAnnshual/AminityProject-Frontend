@@ -5,7 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fresh Food</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #shop-btn{
+            border: 1px solid #0F9D58;
+            width: 100px;
+            height: 40px;
+            color: #0F9D58;
+            background-color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform .2s;
+            font-weight: 600;
+           margin-left:100px;
+        }
+        #shop-btn:hover{
+            background:#0F9D58;
+            color: #fff;
+            -ms-transform: scale(1.2); /* IE 9 */
+            -webkit-transform: scale(1.2); /* Safari 3-8 */
+            transform: scale(1.2); 
+
+        }
+    </style>
 </head>
 
 <body>
@@ -78,7 +101,9 @@
 
                 <div class="food-item-wrap all">
                     <div class="food-item salad-type">
-                        <h1 style="font-size: 2rem; text-align: center;">Food</h1>
+                        <a href="food.html" target="_self">
+                        <input type="button" value="Food" id="shop-btn">
+                        </a>
                         <div class="item-wrap bottom-up play-on-scroll">
                             <div class="item-img">
                                 <div class="img-holder bg-img"
@@ -88,8 +113,8 @@
                         </div>
                     </div>
 
-                    <div class="food-item lorem-type">
-                        <h1 style="font-size: 2rem; text-align: center;">Cafe</h1>
+                    <div class="food-item lorem-type" id="Cafe-page">
+                       <a href="cafe.html"><input type="button" value="Cafe" id="shop-btn"></a> 
                         <div class="item-wrap bottom-up play-on-scroll">
                             <div class="item-img">
                                 <div class="img-holder bg-img"
@@ -100,7 +125,7 @@
                     </div>
 
                     <div class="food-item ipsum-type">
-                        <h1 style="font-size: 2rem; text-align: center;">Stationary</h1>
+                        <input type="button" value="Stationary" id="shop-btn">
                         <div class="item-wrap bottom-up play-on-scroll">
                             
                             <div class="item-img">
@@ -113,7 +138,7 @@
                     </div>
 
                     <div class="food-item lorem-type">
-                        <h1 style="font-size: 2rem; text-align: center;">Naturals Parlour</h1>
+                        <input type="button" value="Parlour" id="shop-btn">
                         <div class="item-wrap bottom-up play-on-scroll">
                             <div class="item-img">
                                 <div class="img-holder bg-img"
@@ -132,6 +157,6 @@
             </div>
         </div>
     </section>        
-    
+    <script src="index.js"></script>
 </body>
 </html>

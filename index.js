@@ -39,6 +39,7 @@ Array.from(categories).forEach((item, index) => {
     }
 })
 
+
 // on scroll animation
 
 let scroll = window.requestAnimationFrame || function(callback) {window.setTimeout(callback, 1000/60)}

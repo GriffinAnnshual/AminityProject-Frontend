@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Cafe Availablity</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #shop-btn{
+            border: 1px solid #0F9D58;
+            width: 100px;
+            height: 40px;
+            color: #0F9D58;
+            background-color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform .2s;
+            font-weight: 800;
+            font-size: 15px;
+           margin-left:30%;
+        }
+        #shop-btn:hover{
+            background:#0F9D58;
+            color: #fff;
+            -ms-transform: scale(1.2); /* IE 9 */
+            -webkit-transform: scale(1.2); /* Safari 3-8 */
+            transform: scale(1.2); 
+
+        }
+    </style>
+</head>
+<body>
+     <!-- MOBILE NAV -->
+     <div class="mb-nav">
+        <div class="mb-move-item"></div>
+        <div class="mb-nav-item active">
+            <a href="#home">
+                <i class="bx bxs-home"></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="#about">
+                <i class='bx bxs-wink-smile'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="#food-menu-section">
+                <i class='bx bxs-food-menu'></i>
+            </a>
+        </div>
+        <div class="mb-nav-item">
+            <a href="#testimonial">
+                <i class='bx bxs-comment-detail'></i>
+            </a>
+        </div>
+    </div>
+    <!-- END MOBILE NAV -->
+    <!-- BACK TO TOP BTN -->
+    <a href="#home" class="back-to-top">
+        <i class="bx bxs-to-top"></i>
+    </a>
+    <!-- END BACK TO TOP BTN -->
+    <!-- TOP NAVIGATION -->
+    <div class="nav">
+        <div class="menu-wrap">
+            <a href="#home">
+                <div class="logo">
+                    Freshfood
+                </div>
+            </a>
+           
+            <div class="right-menu">
+                <div class="cart-btn">
+                    <i class='bx bx-cart-alt'></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="align-items-center bg-img bg-img-fixed" id="food-menu-section"
+        style="background-image: url(assets/katherine-chase-4MMK78S7eyk-unsplash.jpg);">
+
+        <div class="container">
+            <div class="slogan" >
+                <a href="order_now.html" target="_self">
+                    <button style="margin-top:0px;">
+                        Back    
+                    </button>
+                </a>
+               
+            </div>
+            <div class="food-menu slogan">
+
+                <h1><span class="primary-color">Cafe</span> the Cafestry </h1>
+                <div class="shop-category">
+                    
+                    
+                </div>
+
+                <div class="food-item-wrap all">
+                    <div class="food-item salad-type">
+                        <input type="button" value="Drinks" id="shop-btn">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url(assets/cooldrinks.avif);"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="food-item lorem-type">
+                       <a href="cafe.html"><input type="button" value="Chats" id="shop-btn"></a> 
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('assets/anh-nguyen-kcA-c3f_3FE-unsplash.jpg');"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="food-item ipsum-type">
+                        <input type="button" value="Desserts" id="shop-btn">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('assets/dessert_ice_cream.jpg');">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="food-item lorem-type">
+                        <input type="button" value="Hot-Drinks" id="shop-btn">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                            <div class="item-img">
+                                <div class="img-holder bg-img"
+                                    style="background-image: url('assets/coffee-img.avif');"></div>
+                            </div>
+                    </div>
+
+                    
+                   
+
+                    <div class="food-item dolor-type">
+                        <div class="item-wrap bottom-up play-on-scroll">
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>        
+</body>
+<script src="index.js"></script>
+</html>

@@ -223,6 +223,7 @@ section {
 
 .food-category {
     display: flex;
+    padding-top: 7%;
 }
 
 .food-category button {
@@ -409,21 +410,28 @@ section {
     display: block;
 }
 
-.food-item-wrap.salad>div.salad-type {
+.food-item-wrap.salad>div.snacks-type {
     display: block;
 }
 
-.food-item-wrap.lorem>div.lorem-type {
+.food-item-wrap.lorem>div.bakes-type {
     display: block;
 }
 
-.food-item-wrap.ipsum>div.ipsum-type {
+.food-item-wrap.ipsum>div.beverages-type {
     display: block;
 }
 
-.food-item-wrap.dolor>div.dolor-type {
+.food-item-wrap.dolor>div.non_veg-type {
     display: block;
 }
+.food-item-wrap.dolor>div.mess_items-type {
+    display: block;
+}
+.food-item-wrap.dolor>div.others-type {
+    display: block;
+}
+
 
 /* ANIMATION */
 
@@ -724,5 +732,3 @@ section {
       .my-button:hover {
         background-color: #a88722;
       }
-      
-      
